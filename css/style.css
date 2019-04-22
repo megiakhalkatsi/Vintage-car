@@ -367,15 +367,6 @@ section img {
 	padding-left: 0!important;
 }
 .contact{
-	/*background-color: #fff;
-	width: 80%;
-	justify-content: center;
-	position:  absolute;
-	bottom: 0;
-	z-index:  1000;
-	left: 50%;
-	transform: translate(-50%,50%);*/
-
 	width: 80%;
     background: #ebe8de;
     margin-top: -40em;
@@ -407,18 +398,23 @@ section img {
 	text-decoration: none;
 	color: #000;
 }
-.contact_info .navbar-nav i{
-	border-radius: 50%;
-	font-size: 1.5rem;
-	width: 48px;
-	height: 48px;
-	line-height: 48px;
-	border: 1px solid #000;
-	margin-right: 1rem;
+
+.contact_info .nav-item a{
+	transition: .3s;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #000;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact_info .nav-item a:hover{
 	text-decoration: none;
-	color: rgba(0,0,0,0.5);
+	color: rgba(0,0,0,0.7);
 }
 
 #form{
@@ -521,17 +517,13 @@ border-radius: 20px;
 footer{
 	margin-top: 20%;
 }
-footer .footer_left{
-	font-size: 16px;
+
+
+.ft{
+	display: flex;
+	justify-content: space-between;
 	font-family: roboto;
 	color: #000;
-	float:left;
-}
-footer .footer_right {
-	font-size: 16px;
-	font-family: roboto;
-	color: #000;
-	float: right;
 }
 
 /*responsive*/
@@ -647,7 +639,7 @@ footer .footer_right {
 	.click1 h3 {
 	font-size: 20px;
 	}
-	.contact_info .navbar-nav i {
+	.contact_info .nav-item a {
     border-radius: 50%;
     font-size: 1rem;
     width: 35px;
@@ -656,8 +648,16 @@ footer .footer_right {
     border: 1px solid #000;
     margin-right: 0.5rem;
 }
+.large {
+    width: 50px;
+    height: 50px;
+}
      footer{
 	margin-top: 125%;
+	}
+	.ft{
+		display: block;
+		text-align: center;
 	}
 }
 
@@ -688,9 +688,7 @@ header .navbar-nav{
  footer{
 	margin-top: 195%;
 	}
-footer .footer_left, footer .footer_right {
-	font-size: 10px;
-}
+
 
 }
 
